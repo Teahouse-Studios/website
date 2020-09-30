@@ -7,7 +7,7 @@
           <v-col md="6" xs="12">
             <v-row justify="center">
               <h1>Teahouse Studios</h1>
-              <h3>一个由部分 Minecraft Wiki 成员成立的公益性质工作室。 </h3>
+              <h3>一个由部分 Minecraft Wiki 成员成立的公益性质工作室。</h3>
             </v-row>
           </v-col>
           <v-col md="6" xs="12">
@@ -50,8 +50,8 @@
             <v-card>
               <v-list-item three-line>
                 <v-list-item-content>
-                  <v-list-item-title class="headline mb-1">梗体中文资源包</v-list-item-title>
-                  <v-list-item-subtitle>在 Minecraft 中加入了一个新的语言“梗体中文”和其他有趣的小内容，旨在打造更生草的游戏体验。</v-list-item-subtitle>
+                  <v-list-item-title class="headline mb-1">茶馆 Q 群机器人</v-list-item-title>
+                  <v-list-item-subtitle>基于 <a href="https://github.com/GraiaProject/Application">Graia</a>，茶馆 QQ 群的实用机器人。</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
 

@@ -11,6 +11,8 @@ var _lib = _interopRequireDefault(require("vuetify/lib"));
 
 var _colors = _interopRequireDefault(require("vuetify/lib/util/colors"));
 
+var _zhHans = _interopRequireDefault(require("vuetify/es5/locale/zh-Hans"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 _vue["default"].use(_lib["default"]);
@@ -28,6 +30,12 @@ var _default = new _lib["default"]({
         success: _colors["default"].green.lighten1
       }
     }
+  },
+  lang: {
+    locales: {
+      zhHans: _zhHans["default"]
+    },
+    current: 'zhHans'
   }
 });
 

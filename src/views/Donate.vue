@@ -26,20 +26,22 @@
       </v-col>
     </v-row>
     <p>面对这样的费用，工作室成员又大部分为学生，我们决定开放捐款通道。</p>
-    <v-container>
-      <v-card>
-        <v-tabs background-color="primary" dark v-model="paymentmethod">
-          <v-tabs-slider></v-tabs-slider>
-
-          <v-tab>微信支付</v-tab>
-
-          <v-tab-item>
-            <v-card flat>
-              <v-card-text>www</v-card-text>
-            </v-card>
-          </v-tab-item>
-        </v-tabs>
-      </v-card>
-    </v-container>
+    <Donate />
+    <br>
+    <v-divider></v-divider>
+    <br>
+    <h2>流水</h2>
+    <Account />
   </v-container>
 </template>
+
+<script>
+import Donate from "@/components/Donate";
+import Account from "@/components/Account";
+export default {
+  components: {
+    Donate,
+    Account
+  }
+};
+</script>
