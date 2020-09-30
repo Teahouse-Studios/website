@@ -1,23 +1,42 @@
 <template>
   <div>
     <v-container>
-      <v-row justify="center">
-        <v-col sm="12" md="4">
-          <v-card>
+    <v-slide-group show-arrows>
+      <v-slide-item>
+        <v-card class="ma-2">
             <v-card-text>placeholder</v-card-text>
           </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
+      </v-slide-item>
+      <v-slide-item>
+        <v-card class="ma-2">
             <v-card-text>placeholder</v-card-text>
           </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
+      </v-slide-item>
+      <v-slide-item>
+        <v-card class="ma-2">
             <v-card-text>placeholder</v-card-text>
           </v-card>
-        </v-col>
-      </v-row>
+      </v-slide-item>
+      <v-slide-item>
+        <v-card class="ma-2">
+            <v-card-text>placeholder</v-card-text>
+          </v-card>
+      </v-slide-item>
+      <v-slide-item>
+        <v-card class="ma-2">
+            <v-card-text>placeholder</v-card-text>
+          </v-card>
+      </v-slide-item>
+    </v-slide-group>
     </v-container>
   </div>
 </template>
+
+
+<script>
+  export default {
+    data: () => ({
+      model: null,
+    }),
+  }
+</script>
