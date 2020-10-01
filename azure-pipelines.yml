@@ -22,3 +22,7 @@ steps:
 - script: |
     npm run build
   displayName: 'Build'
+
+- script: |
+    git pull
+  displayName: 'git pull'
