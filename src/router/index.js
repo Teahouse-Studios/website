@@ -22,11 +22,18 @@ const routes = [
   {
     path: '/privacy/',
     name: '隐私政策',
+    alias: '/privacy-policy/',
     component: () => import('@/views/Privacy.vue')
-  }
+  },
+  {
+    path: '*',
+    name: '404',
+    component: () => import('@/views/404.vue')
+  },
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

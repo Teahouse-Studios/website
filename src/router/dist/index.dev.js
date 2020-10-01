@@ -46,13 +46,23 @@ var routes = [{
 }, {
   path: '/privacy/',
   name: '隐私政策',
+  alias: '/privacy-policy/',
   component: function component() {
     return Promise.resolve().then(function () {
       return _interopRequireWildcard(require('@/views/Privacy.vue'));
     });
   }
+}, {
+  path: '*',
+  name: '404',
+  component: function component() {
+    return Promise.resolve().then(function () {
+      return _interopRequireWildcard(require('@/views/404.vue'));
+    });
+  }
 }];
 var router = new _vueRouter["default"]({
+  mode: 'history',
   routes: routes
 });
 var _default = router;
