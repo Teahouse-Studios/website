@@ -13,7 +13,7 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text>
-                <p>请到我们的合作伙伴爱发电进行下一步支付。</p>
+                <p>若要使用微信支付向我们捐款，请到我们的合作伙伴爱发电进行下一步支付。</p>
                 <v-btn href="https://afdian.net/@teahouse" color="primary">前往爱发电</v-btn>
               </v-card-text>
             </v-card>
@@ -21,7 +21,7 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text>
-                <p>请到我们的合作伙伴爱发电进行下一步支付。</p>
+                <p>若要使用支付宝向我们捐款，请到我们的合作伙伴爱发电进行下一步支付。</p>
                 <v-btn href="https://afdian.net/@teahouse" color="primary">前往爱发电</v-btn>
               </v-card-text>
             </v-card>
@@ -29,7 +29,7 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text>
-                <p>请到我们的合作伙伴 Patreon 进行下一步支付。</p>
+                <p>若要使用 PayPal 向我们捐款，请到我们的合作伙伴 Patreon 进行下一步支付。</p>
                 <v-btn href="https://patreon.com/teahousestudios" color="primary">前往 Patreon</v-btn>
               </v-card-text>
             </v-card>
@@ -37,7 +37,7 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text>
-                <p>请到我们的合作伙伴 Patreon 进行下一步支付。</p>
+                <p>若要使用国际信用卡向我们捐款，请到我们的合作伙伴 Patreon 进行下一步支付。</p>
                 <v-btn href="https://patreon.com/teahousestudios" color="primary">前往 Patreon</v-btn>
               </v-card-text>
             </v-card>
@@ -45,7 +45,7 @@
           <v-tab-item>
             <v-card flat>
               <v-card-text>
-                <p>若使用其它方式像我们捐款，请使用 E-mail 联系我们。</p>
+                <p>若要使用其它方式向我们捐款，请使用 E-mail 联系我们。</p>
                 <v-btn href="mailto:admin@teahou.se" color="primary">发送 E-mail</v-btn>
               </v-card-text>
             </v-card>
