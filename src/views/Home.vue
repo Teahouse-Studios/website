@@ -29,7 +29,7 @@
               <v-list-item three-line>
                 <v-list-item-content>
                   <v-list-item-title class="headline mb-1">梗体中文资源包</v-list-item-title>
-                  <v-list-item-subtitle>在 Minecraft 中加入了一个新的语言“梗体中文”和其他有趣的小内容，旨在打造更生草的游戏体验。</v-list-item-subtitle>
+                  <v-list-item-subtitle>在 Minecraft Java 版中加入了一个新的语言“梗体中文”和其他有趣的小内容，旨在打造更生草的游戏体验。</v-list-item-subtitle>
                 </v-list-item-content>
 
                 <v-list-item-avatar
@@ -43,6 +43,28 @@
                 <v-btn icon href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack"><v-icon>mdi-github</v-icon></v-btn>
                 <v-btn icon href="https://dl.meme.teahou.se/"><v-icon>mdi-download</v-icon></v-btn>
                 <v-btn icon href="https://www.mcbbs.net/thread-1004643-1-1.html"><v-icon>mdi-post</v-icon></v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col sm="12" md="4">
+            <v-card>
+              <v-list-item three-line>
+                <v-list-item-content>
+                  <v-list-item-title class="headline mb-1">梗体中文资源附加包-基岩版</v-list-item-title>
+                  <v-list-item-subtitle>Minecraft Java 版梗体中文资源包的移植版，为 Minecraft 基岩版进行了适配。</v-list-item-subtitle>
+                </v-list-item-content>
+
+                <v-list-item-avatar
+                  tile
+                  size="80"
+                  color="grey"
+                ><v-img src="@/assets/meme.png" /></v-list-item-avatar>
+              </v-list-item>
+
+              <v-card-actions>
+                <v-btn icon href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock"><v-icon>mdi-github</v-icon></v-btn>
+                <v-btn icon href="https://dl.meme.teahou.se/"><v-icon>mdi-download</v-icon></v-btn>
+                <v-btn icon href="https://www.mcbbs.net/thread-1005191-1-1.html"><v-icon>mdi-post</v-icon></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
