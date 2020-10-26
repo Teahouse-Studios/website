@@ -189,7 +189,7 @@
               </v-list-item>
 
               <v-card-actions>
-                <v-btn icon href="https://github.com/MysticNebula70"><v-icon>mdi-github</v-icon></v-btn>
+                <v-btn icon href="https://github.com/AlPha5130"><v-icon>mdi-github</v-icon></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -209,7 +209,7 @@
               </v-list-item>
 
               <v-card-actions>
-                <v-btn icon href="https://github.com/_LittleC_"><v-icon>mdi-github</v-icon></v-btn>
+                <v-btn icon href="https://github.com/XxLittleCxX"><v-icon>mdi-github</v-icon></v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
