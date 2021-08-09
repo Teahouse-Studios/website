@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <v-app>
-      <v-app-bar app clipped-left color="#fff">
+    <v-app class="text-body-1">
+      <v-app-bar app clipped-left color="indigo" dark elevate-on-scroll>
         <v-toolbar-title>
-          <router-link to="/" class="d-none d-sm-flex" title="首页">
+          <router-link to="/" class="d-none d-sm-flex" title="首页" style="display: flex !important">
             <v-img
               src="@/assets/logo.svg"
               alt="Teahouse Studios"
@@ -12,6 +12,7 @@
               transition="scale-transition"
               max-height="48"
               position="left center"
+              style="filter: invert(1)"
             />
           </router-link>
         </v-toolbar-title>
@@ -49,3 +50,8 @@
     </v-app>
   </div>
 </template>
+<style>
+.v-application a {
+  text-decoration: none;
+}
+</style>
