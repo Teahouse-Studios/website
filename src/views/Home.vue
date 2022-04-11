@@ -1,201 +1,140 @@
 <template>
-  <div>
-    <section style="margin: -12px -12px 48px -12px;">
-      <v-container fluid class="py-12 indigo white--text">
-        <v-row justify="center">
-          <v-col md="6" xs="12" offset-md="2">
-            <v-img
-              src="@/assets/logo.svg/"
-              style="filter: invert(1)"
-              max-width="450px"
+  <div class="fp-blocks">
+    <section class="fp-block">
+      <v-container class="d-flex align-center justify-center block-height">
+        <div>
+          <v-row class="px-4">
+            <v-col cols="12" md="6">
+              <div>
+                <div
+                  class="text-h3 font-weight-bold mb-3"
+                  style="line-height: 3.75rem"
+                >
+                  源于 Minecraft<sup>&reg;</sup>，<br />
+                  我们不断前进。
+                </div>
+                <div class="text-subtitle-1 mb-3">
+                  茶馆工作室深耕于 Minecraft
+                  等游戏的周边内容创作，创作出了多款创意资源、语言附加包，致力于为玩家提供更欢乐的游戏体验。
+                </div>
+              </div>
+              <div class="mb-3">
+                <v-btn
+                  variant="text"
+                  prepend-icon="mdi-arrow-right"
+                  @click="$refs.about.scrollIntoView({ behavior: 'smooth' })"
+                >
+                  了解更多
+                </v-btn>
+                <v-btn variant="text" prepend-icon="mdi-cash" color="#946ce6">
+                  发电
+                </v-btn>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6">
+              <v-carousel
+                class="fp-player rounded-lg elevation-5 mx-auto mr-md-0"
+                show-arrows
+                v-model="video"
+              >
+                <v-carousel-item v-for="v in videos" :key="v">
+                  <iframe
+                    :src="v"
+                    scrolling="no"
+                    border="0"
+                    width="100%"
+                    height="100%"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                    class="rounded-lg"
+                  >
+                  </iframe>
+                </v-carousel-item>
+              </v-carousel>
+            </v-col>
+          </v-row>
+        </div>
+      </v-container>
+    </section>
+    <section ref="about" class="fp-block">
+      <v-container class="d-flex align-center justify-center block-height">
+        <v-row class="px-4">
+          <v-col cols="12" md="6" class="d-flex align-center justify-center">
+            <img
+              src="@/assets/avatars.png"
+              class="d-block"
+              style="width: 100%"
             />
-            <p class="text-h6 ml-9">
-              一个由部分 Minecraft Wiki 成员成立的公益性质工作室。
-            </p>
           </v-col>
-          <v-spacer />
-        </v-row>
-      </v-container>
-    </section>
-    <section class="mb-9">
-      <v-container>
-        <h2 class="text-h4 mb-5">关于</h2>
-        <p>
-          <b>Teahouse Studios</b>（茶馆工作室）是一个由部分 Minecraft Wiki
-          成员于 2020 年 7 月 18 日成立的公益性质工作室。我们的主要创作方向为
-          Minecraft。我们的成员大多数都是 Minecraft Wiki 的成员。
-        </p>
-        <p>
-          一切都是始于我们的“整活”。在 Lxazl5770 的第一版的基础上，我们从 2020
-          年 2 月 13
-          日开始一直维护着《梗体中文》资源包。它“将一部分译名或其他游戏内字符串替换成了一些知名/不知名的梗或笑话，或将其用诙谐的语言重写了一遍。”（e.g.
-          将“木棍”替换成了“法国面包”，“和平难度”替换成了“怂”）
-        </p>
-        <p>
-          在此同时，Dianliang233 于 2020 年 2 月 14 日发起了文言语言包项目。2021
-          年 1 月，在工作室成员和中文 Minecraft Wiki
-          管理团队的推动下，文言被添加至 Java 版 Crowdin。2021 年 6
-          月，文言被正式添加至 Java 版 Minecraft。目前，文言项目隶属中文
-          Minecraft Wiki 管理团队管理。
-        </p>
-        <p>
-          故事还在进行着……
-        </p>
-      </v-container>
-    </section>
-    <section class="mb-9">
-      <v-container>
-        <h2 class="text-h4 mb-7">作品</h2>
-        <v-row>
-          <v-col sm="12" md="4">
-            <v-card>
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <v-list-item-title class="headline mb-1"
-                    >梗体中文</v-list-item-title
-                  >
-                  <v-list-item-subtitle
-                    >加入了一个新的语言“梗体中文”，旨在打造更生草的游戏体验。</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-
-                <v-list-item-avatar tile size="80" color="grey"
-                  ><v-img src="@/assets/meme.png"
-                /></v-list-item-avatar>
-              </v-list-item>
-
-              <v-card-actions>
-                <v-btn
-                  icon
-                  href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack"
-                  ><v-icon>mdi-github</v-icon></v-btn
-                >
-                <v-btn icon href="https://dl.meme.teahou.se/"
-                  ><v-icon>mdi-download</v-icon></v-btn
-                >
-                <v-btn icon href="https://www.mcbbs.net/thread-1004643-1-1.html"
-                  ><v-icon>mdi-post</v-icon></v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col sm="12" md="4">
-            <v-card>
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <v-list-item-title class="headline mb-1"
-                    >梗体中文基岩版</v-list-item-title
-                  >
-                  <v-list-item-subtitle
-                    >为 Minecraft 基岩版进行了适配的梗中。</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-
-                <v-list-item-avatar tile size="80" color="grey"
-                  ><v-img src="@/assets/meme.png"
-                /></v-list-item-avatar>
-              </v-list-item>
-
-              <v-card-actions>
-                <v-btn
-                  icon
-                  href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack-bedrock"
-                  ><v-icon>mdi-github</v-icon></v-btn
-                >
-                <v-btn icon href="https://dl.meme.teahou.se/"
-                  ><v-icon>mdi-download</v-icon></v-btn
-                >
-                <v-btn icon href="https://www.mcbbs.net/thread-1005191-1-1.html"
-                  ><v-icon>mdi-post</v-icon></v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col sm="12" md="4">
-            <v-card>
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <v-list-item-title class="headline mb-1"
-                    >茶馆 Q 群机器人</v-list-item-title
-                  >
-                  <v-list-item-subtitle
-                    >基于
-                    <a href="https://github.com/GraiaProject/Application"
-                      >Graia</a
-                    >，茶馆 QQ 群的实用机器人。</v-list-item-subtitle
-                  >
-                </v-list-item-content>
-              </v-list-item>
-
-              <v-card-actions>
-                <v-btn icon href="https://github.com/Teahouse-Studios/bot"
-                  ><v-icon>mdi-github</v-icon></v-btn
-                >
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col sm="12" md="4">
-            <!--placeholder-->
+          <v-col cols="12" md="6" class="text-right d-flex align-center">
+            <div>
+              <div
+                class="text-h3 font-weight-bold mb-3"
+                style="line-height: 3.75rem"
+              >
+                我们是谁？
+              </div>
+              <div class="text-subtitle-1 mb-3">
+                我们是一群热爱 Minecraft
+                游戏的玩家，我们中的大部分人出身于全球最大的 Minecraft
+                百科全书网站
+                <ExLink href="https://minecraft.fandom.com/zh/"
+                  >Minecraft Wiki</ExLink
+                >，拥有良好的游戏译名翻译经验。其他成员大部分来自 Minecraft
+                社区中的其他部分和开源社区团队。我们的目标是为游戏玩家提供更好的体验。
+              </div>
+              <v-btn
+                variant="text"
+                prepend-icon="mdi-account-multiple"
+                class="mb-3"
+              >
+                了解成员
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </v-container>
     </section>
-    <section class="mb-9">
-      <v-container>
-        <h2 class="text-h4 mb-7">新闻</h2>
-        <News />
-      </v-container>
-    </section>
-    <section class="mb-n3 mx-n4">
-      <v-container fluid class="indigo white--text px-10">
-        <v-row>
-          <v-col md="10" cols="12" align-self="center">
-            <h2 class="text-h5" style="display: inline-block;">
-              来看看我们的成员们。
-            </h2>
-          </v-col>
-          <v-col md="2" cols="12" align-self="center" class="text-right">
-            <v-btn class="float-right" to="/memebers/">成员名单</v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-container fluid class="black white--text px-10">
-        <v-row>
-          <v-col md="6" cols="12" align-self="center">
-            <h2 class="text-h5" style="display: inline-block;">关注我们</h2>
-          </v-col>
-          <v-col md="6" cols="12" align-self="center" class="text-right">
-            <v-btn
-              href="https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-2"
-              ><v-icon left>mdi-github</v-icon> GitHub
-            </v-btn>
-            <v-btn
-              href="https://space.bilibili.com/406275313"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Bilibili
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
+    <t-footer class="fp-block-footer" />
   </div>
 </template>
 
-<script>
-import News from "@/components/News";
-export default {
-  components: {
-    News,
-  },
-};
-</script>
+<script lang="ts" setup>
+import TFooter from '@/components/TFooter.vue'
+import ExLink from '@/components/ExLink.vue'
 
-<style lang="scss" scoped>
-.mp-h1 {
-  font-weight: 400;
+let video = $ref(0)
+const videos = [
+  'https://player.bilibili.com/player.html?aid=716333939&bvid=BV1ZX4y1A7jY&cid=357776775&page=1',
+  'https://player.bilibili.com/player.html?aid=889128743&bvid=BV1gK4y1u7Qs&cid=370637043&page=1',
+]
+</script>
+<style lang="scss">
+.fp-player {
+  border-radius: 8px;
+  padding: 0;
+  height: 35vh !important;
+  width: 90%;
+}
+
+.fp-blocks {
+  @extend .block-height;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.fp-block {
+  @extend .block-height;
+  scroll-snap-align: start;
+  scroll-padding-top: 64px;
+}
+
+.fp-block-footer {
+  scroll-snap-align: start;
+}
+
+.block-height {
+  height: calc(100vh - 64px);
 }
 </style>

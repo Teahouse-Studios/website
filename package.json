@@ -3,29 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite"
   },
+  "main": "background.js",
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.4.5",
-    "vuetify": "^2.3.12"
+    "@mdi/font": "5.9.55",
+    "roboto-fontface": "*",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.14",
+    "vue3-markdown-it": "^1.0.10",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "^4.5.6",
-    "@vue/cli-service": "~4.5.0",
+    "@types/webfontloader": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vuetify/vite-plugin": "^1.0.0-alpha.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.15.1",
-    "sass": "1.32",
-    "sass-loader": "10",
-    "vue-cli-plugin-vuetify": "^2.0.7",
-    "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.3.0"
+    "sass": "^1.38.0",
+    "typescript": "~4.1.5",
+    "vite": "^2.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -34,10 +38,11 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@typescript-eslint/parser"
     },
     "rules": {
       "vue/valid-template-root": "warn"

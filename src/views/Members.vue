@@ -1,160 +1,83 @@
 <template>
-  <div>
-    <h2 class="text-center">成员</h2>
-    <v-container>
-      <v-row>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >Lxazl5770</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >中文 Minecraft Wiki
-                  管理员、梗体中文资源包创始人、茶馆工作室创始人。</v-list-item-subtitle
-                >
-              </v-list-item-content>
+  <v-container class="py-4">
+    <h1 class="text-h3 mt-6 mb-3">成员</h1>
+    <p class="text-body-1">
+      茶馆工作室目前有
+      <!-- {{ members.length }} -->24 位成员。他们来自五湖四海，精通各项技能。
+    </p>
+    <v-list class="mt-5">
+      <div v-for="m in members" :key="m.name">
+        <v-list-item three-line :to="`/members/${m.name}`">
+          <v-list-item-avatar>
+            <v-avatar size="70">
+              <v-img :src="procAvatar(m.avatar)" width="70"></v-img>
+            </v-avatar>
+          </v-list-item-avatar>
 
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/lx.png" /> --></v-list-item-avatar
-              >
-            </v-list-item>
+          <v-list-item-header class="ml-4">
+            <v-list-item-title>{{ m.name }}</v-list-item-title>
+            <v-list-item-subtitle>
+              {{ m.title.join(' · ') }}
+            </v-list-item-subtitle>
+            <v-list-item-subtitle>
+              {{ m.email }}&ZeroWidthSpace;&#64;&ZeroWidthSpace;teahou.se
+            </v-list-item-subtitle>
+          </v-list-item-header>
 
-            <v-card-actions>
-              <v-btn icon href="https://github.com/Lxazl5770"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >Dianliang233</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >中文 Minecraft Wiki
-                  巡查员、茶馆工作室创始人。</v-list-item-subtitle
-                >
-              </v-list-item-content>
-
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/dl.png" /> --></v-list-item-avatar
-              >
-            </v-list-item>
-
-            <v-card-actions>
-              <v-btn icon href="https://github.com/Dianliang233"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >LakeJason</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >中文 Minecraft Wiki
-                  巡查员、茶馆工作室创始人。</v-list-item-subtitle
-                >
-              </v-list-item-content>
-
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/lake.png" /> --></v-list-item-avatar
-              >
-            </v-list-item>
-
-            <v-card-actions>
-              <v-btn icon href="https://github.com/lakejason0"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >ff98sha</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >中文 Minecraft Wiki
-                  行政员、茶馆工作室荣誉成员。</v-list-item-subtitle
-                >
-              </v-list-item-content>
-
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/ff.png" /> --></v-list-item-avatar
-              >
-            </v-list-item>
-
-            <v-card-actions>
-              <v-btn icon href="https://github.com/ff98sha"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >MysticNebula70</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >中文 Minecraft Wiki
-                  管理员、茶馆工作室核心成员。曾为梗体中文资源包的构建系统作出重大贡献。</v-list-item-subtitle
-                >
-              </v-list-item-content>
-
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/my.jpg" /> --></v-list-item-avatar
-              >
-            </v-list-item>
-
-            <v-card-actions>
-              <v-btn icon href="https://github.com/AlPha5130"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col sm="12" md="4">
-          <v-card>
-            <v-list-item three-line>
-              <v-list-item-content>
-                <v-list-item-title class="headline mb-1"
-                  >_LittleC_</v-list-item-title
-                >
-                <v-list-item-subtitle
-                  >知名 Minecraft 服务器
-                  <a href="https://www.yinwurealm.org/">YinwuRealm</a>
-                  管理员、茶馆工作室核心成员、<del>御用全栈工程师</del>。曾为梗体中文资源包的构建系统作出重大贡献。</v-list-item-subtitle
-                >
-              </v-list-item-content>
-
-              <v-list-item-avatar tile size="80" color="grey"
-                ><!-- <v-img src="@/assets/members/lcnb.png" /> --></v-list-item-avatar
-              >
-            </v-list-item>
-
-            <v-card-actions>
-              <v-btn icon href="https://github.com/XxLittleCxX"
-                ><v-icon>mdi-github</v-icon></v-btn
-              >
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+          <template #append>
+            <v-list-item-avatar end>
+              <v-btn
+                v-if="m.email"
+                size="small"
+                variant="text"
+                color="grey lighten-1"
+                icon="mdi-email"
+                :href="`mailto:${m.email}@teahou.se`"
+              ></v-btn>
+              <v-btn
+                v-if="m.github"
+                size="small"
+                variant="text"
+                color="grey lighten-1"
+                icon="mdi-github"
+                :href="`https://github.com/${m.github}`"
+              ></v-btn>
+              <v-btn
+                v-if="m.twitter"
+                size="small"
+                variant="text"
+                color="grey lighten-1"
+                icon="mdi-twitter"
+                :href="`https://twitter.com/${m.twitter}`"
+              ></v-btn>
+              <v-btn
+                v-if="m.wiki"
+                size="small"
+                variant="text"
+                color="grey lighten-1"
+                icon="mdi-wikipedia"
+                :href="`https://twitter.com/${m.wiki}`"
+              ></v-btn>
+              <v-btn
+                v-if="m.website"
+                size="small"
+                variant="text"
+                color="grey lighten-1"
+                icon="mdi-web"
+                :href="`${m.website}`"
+              ></v-btn>
+            </v-list-item-avatar>
+          </template>
+        </v-list-item>
+        <v-divider></v-divider>
+      </div>
+    </v-list>
+  </v-container>
 </template>
+<script lang="ts" setup>
+import members from '@/members'
+
+function procAvatar(avatar: string) {
+  return '/src/assets/avatars/' + avatar
+}
+</script>
