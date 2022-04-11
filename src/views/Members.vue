@@ -5,7 +5,7 @@
       茶馆工作室目前有
       <!-- {{ members.length }} -->24 位成员。他们来自五湖四海，精通各项技能。
     </p>
-    <v-list class="mt-5">
+    <v-list class="m-5">
       <div v-for="m in members" :key="m.name">
         <v-list-item three-line :to="`/members/${m.name}`">
           <v-list-item-avatar>

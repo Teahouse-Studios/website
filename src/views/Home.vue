@@ -10,11 +10,11 @@
                   class="text-h3 font-weight-bold mb-3"
                   style="line-height: 3.75rem"
                 >
-                  源于 Minecraft<sup>&reg;</sup>，<br />
+                  源于 Minecraft，<br />
                   我们不断前进。
                 </div>
                 <div class="text-subtitle-1 mb-3">
-                  茶馆工作室深耕于 Minecraft
+                  茶馆工作室专注于 Minecraft
                   等游戏的周边内容创作，创作出了多款创意资源、语言附加包，致力于为玩家提供更欢乐的游戏体验。
                 </div>
               </div>
@@ -33,9 +33,9 @@
             </v-col>
             <v-col cols="12" md="6">
               <v-carousel
+                v-model="video"
                 class="fp-player rounded-lg elevation-5 mx-auto mr-md-0"
                 show-arrows
-                v-model="video"
               >
                 <v-carousel-item v-for="v in videos" :key="v">
                   <iframe
@@ -85,6 +85,7 @@
                 社区中的其他部分和开源社区团队。我们的目标是为游戏玩家提供更好的体验。
               </div>
               <v-btn
+                to="/members/"
                 variant="text"
                 prepend-icon="mdi-account-multiple"
                 class="mb-3"
@@ -96,6 +97,101 @@
         </v-row>
       </v-container>
     </section>
+    <section class="fp-block">
+      <v-container class="d-flex align-center justify-center block-height">
+        <v-row class="px-4">
+          <v-col
+            cols="12"
+            class="d-flex align-center justify-center text-h3 font-weight-bold mb-3"
+          >
+            我们的产品
+          </v-col>
+          <v-col cols="12" md="4">
+            <div>
+              <div
+                class="text-h4 font-weight-bold mb-3"
+                style="line-height: 3.75rem"
+              >
+                梗体中文资源包
+              </div>
+              <div class="text-subtitle-1 mb-3">
+                梗体中文资源包由本工作室成员、中文 Minecraft Wiki 行政员
+                Lxazl5770 于 2020 年 1 月创始。此资源包致力于打造更娱乐的
+                Minecraft
+                游戏体验。它将一部分游戏内容译名或其他游戏内字符串替换成了一些梗和笑话。梗体中文资源包一经推出广受好评，获得了多位
+                UP 主的推荐和其他玩家的认可，并成功上架网易我的世界中国版。截止
+                2022 年 4 月，梗体中文资源包全平台累计下载量超过 10 万次。
+              </div>
+              <v-btn
+                to="/products/meme/"
+                variant="text"
+                prepend-icon="mdi-arrow-right"
+                class="mb-3"
+              >
+                了解更多
+              </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div>
+              <div
+                class="text-h4 font-weight-bold mb-3"
+                style="line-height: 3.75rem"
+              >
+                小可
+              </div>
+              <div class="text-subtitle-1 mb-3">
+                小可是基于多个框架开发的可扩展、多平台聊天机器人，有 MediaWiki
+                网站条目信息获取、MediaWiki 维护实用工具、GitHub 查询、Minecraft
+                相关信息查询、音游信息查询等多个功能。小可支持
+                Telegram、Discord、QQ、QQ 频道多平台。我们正在进行 QQ
+                频道官方机器人入驻开发，未来可能会成为官方认证的机器人。
+              </div>
+              <v-btn
+                to="/products/meme/"
+                variant="text"
+                prepend-icon="mdi-arrow-right"
+                class="mb-3"
+              >
+                了解更多
+              </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="12" md="4">
+            <div>
+              <div
+                class="text-h4 font-weight-bold mb-3"
+                style="line-height: 3.75rem"
+              >
+                Minecraft 文言资源包
+              </div>
+              <div class="text-subtitle-1 mb-3">
+                Minecraft 文言资源包由本工作室成员 Dianliang233 于 2020 年 1
+                月创始。此资源包为 Minecraft
+                新增了一个语言——文言。文言项目创始之后，立刻得到多方支持。其中，原中文
+                Minecraft Wiki 管理员 Cuervo 在 Crowdin
+                上申请了官方语言支持。2021 年 1
+                月，文言成为了官方支持的语言项目。文言计现由文言翻译审核员管理。
+              </div>
+              <v-btn
+                to="/products/meme/"
+                variant="text"
+                prepend-icon="mdi-arrow-right"
+                class="mb-3"
+              >
+                了解更多
+              </v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+    <v-icon
+      class="d-block mx-auto"
+      style="position: sticky; bottom: 10px"
+      size="x-large"
+      >mdi-chevron-down</v-icon
+    >
     <t-footer class="fp-block-footer" />
   </div>
 </template>

@@ -9,43 +9,48 @@
   },
   "main": "background.js",
   "dependencies": {
-    "@mdi/font": "5.9.55",
+    "@mdi/font": "^6.6.96",
     "roboto-fontface": "*",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14",
     "vue3-markdown-it": "^1.0.10",
     "vuetify": "^3.0.0-beta.0",
-    "webfontloader": "^1.0.0"
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@types/webfontloader": "^1.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vitejs/plugin-vue": "^2.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "@vuetify/vite-plugin": "^1.0.0-alpha.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^7.15.1",
-    "sass": "^1.38.0",
-    "typescript": "~4.1.5",
-    "vite": "^2.0.0"
+    "@types/webfontloader": "^1.6.34",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "sass": "^1.50.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.1"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "vue/setup-compiler-macros": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/typescript"
+      "plugin:vue/vue3-recommended",
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     },
     "rules": {
-      "vue/valid-template-root": "warn"
+      "vue/valid-template-root": "warn",
+      "vue/max-attributes-per-line": "off",
+      "vue/html-self-closing": "off",
+      "vue/html-closing-bracket-newline": "off",
+      "vue/html-indent": "off",
+      "vue/multiline-html-element-content-newline": "off",
+      "vue/singleline-html-element-content-newline": "off",
+      "vue/multi-word-component-names": "off"
     }
   },
   "browserslist": [
