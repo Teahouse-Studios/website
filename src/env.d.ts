@@ -7,6 +7,12 @@ declare module '*.vue' {
   export default component
 }
 
+declare module '*.md' {
+  import { ComponentOptions } from 'vue'
+  const Component: ComponentOptions
+  export default Component
+}
+
 declare module 'vuetify'
 declare module 'vuetify/lib/components'
 declare module 'vuetify/lib/directives'

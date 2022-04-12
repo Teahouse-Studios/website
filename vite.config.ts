@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from '@vuetify/vite-plugin'
+import markdown from 'vite-plugin-md'
 
 const path = require('path')
 
@@ -9,7 +10,9 @@ export default defineConfig({
   plugins: [
     vue({
       reactivityTransform: true,
+      include: [/\.vue$/, /\.md$/],
     }),
+    markdown(),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       autoImport: true,

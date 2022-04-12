@@ -77,7 +77,7 @@
     <v-list-item-subtitle class="mb-3">介绍</v-list-item-subtitle>
     <v-card>
       <v-container>
-        <Markdown :source="md" class="markdown-render" html linkify />
+        <md class="markdown-render" />
       </v-container>
     </v-card>
   </v-container>
@@ -86,13 +86,13 @@
 import 'highlight.js/styles/base16/material.css'
 import members from '@/members'
 import { useRoute } from 'vue-router'
-import Markdown from 'vue3-markdown-it'
+import type { ComponentOptions } from 'vue'
 
 const route = useRoute()
 const name = route.params.name
 const member = members.find((m) => m.name === name)!
-let md = $ref('')
-import(`../members/${member.markdown}?raw`).then((m) => {
+let md = $ref<ComponentOptions>()
+import(`../members/${member.markdown.replace('.md', '')}.md`).then((m) => {
   console.log(m.default)
   md = m.default
 })

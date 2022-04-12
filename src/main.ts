@@ -1,9 +1,19 @@
-import { createApp } from 'vue'
 import App from './App.vue'
+import { ViteSSG } from 'vite-ssg'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 
 loadFonts()
 
-createApp(App).use(router).use(vuetify).mount('#app')
+export const createApp = ViteSSG(
+  // the root component
+  App,
+  // vue-router options
+  router,
+  // function to have custom setups
+  ({ app, router, routes, isClient, initialState }) => {
+    // install plugins etc.
+    app.use(vuetify)
+  }
+)

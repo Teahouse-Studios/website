@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { RouterOptions } from 'vite-ssg'
+import { createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -42,10 +43,10 @@ const routes: RouteRecordRaw[] = [
   },
 ]
 
-const router = createRouter({
+const router: RouterOptions = {
   history: createWebHistory(),
   routes,
-})
+}
 
 declare module 'vue-router' {
   // eslint-disable-next-line no-unused-vars

@@ -231,6 +231,6 @@ const videos = [
 }
 
 .block-height {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
 }
 </style>
