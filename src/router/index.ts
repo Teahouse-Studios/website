@@ -1,14 +1,11 @@
 import { RouterOptions } from 'vite-ssg'
-import { createWebHistory, RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: '首页',
     component: () => import('@/views/Home.vue'),
-    meta: {
-      noFooter: true,
-    },
   },
   {
     path: '/donate/',
@@ -37,14 +34,13 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Member.vue'),
   },
   {
-    path: '/.*',
-    name: '404',
-    component: () => import('@/views/404.vue'),
+    path: '/products/',
+    name: '产品列表',
+    component: () => import('@/views/Products.vue'),
   },
 ]
 
 const router: RouterOptions = {
-  history: createWebHistory(),
   routes,
 }
 

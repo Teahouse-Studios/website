@@ -183,21 +183,24 @@
               </v-btn>
             </div>
           </v-col>
+          <v-col cols="12" class="text-center">
+            <v-btn to="/products/" variant="text" prepend-icon="mdi-apps"
+              >更多产品</v-btn
+            >
+          </v-col>
         </v-row>
       </v-container>
     </section>
-    <v-icon
-      class="d-block mx-auto"
-      style="position: sticky; bottom: 10px"
-      size="x-large"
-      >mdi-chevron-down</v-icon
+    <div
+      class="d-flex justify-center text-body-2"
+      style="position: fixed; bottom: 10px; width: 100%"
     >
-    <t-footer class="fp-block-footer" />
+      <v-icon left>mdi-chevron-down</v-icon> 向下滚动
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import TFooter from '@/components/TFooter.vue'
 import ExLink from '@/components/ExLink.vue'
 
 let video = $ref(0)
@@ -216,18 +219,10 @@ const videos = [
 
 .fp-blocks {
   @extend .block-height;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 .fp-block {
   @extend .block-height;
-  scroll-snap-align: start;
-  scroll-padding-top: 64px;
-}
-
-.fp-block-footer {
-  scroll-snap-align: start;
 }
 
 .block-height {

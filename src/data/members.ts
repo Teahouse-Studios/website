@@ -1,6 +1,6 @@
 const members: Member[] = [
   {
-    name: 'Dianiang233',
+    name: 'Dianliang233',
     title: ['联合创始人', '前端开发工程师'],
     avatar: 'Dianliang233.png',
     markdown: 'Dianliang233.md',

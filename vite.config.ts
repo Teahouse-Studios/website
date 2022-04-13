@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vuetify from '@vuetify/vite-plugin'
-import markdown from 'vite-plugin-md'
+import components from 'unplugin-vue-components/vite'
+import { Vuetify3Resolver } from 'unplugin-vue-components/resolvers'
+import prism from 'markdown-it-prism'
+import markdown, { meta } from 'vite-plugin-md'
+import visualizer from 'rollup-plugin-visualizer'
+import pages from 'vite-plugin-pages'
+import layouts from 'vite-plugin-vue-layouts'
 
 const path = require('path')
 
@@ -12,11 +17,19 @@ export default defineConfig({
       reactivityTransform: true,
       include: [/\.vue$/, /\.md$/],
     }),
-    markdown(),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
-    vuetify({
-      autoImport: true,
+    markdown({
+      markdownItUses: [prism],
+      builders: [meta()],
     }),
+    components({
+      resolvers: [Vuetify3Resolver()],
+      extensions: ['vue', 'md'],
+    }),
+    layouts(),
+    pages({
+      extensions: ['vue', 'md'],
+    }),
+    visualizer(),
   ],
   define: { 'process.env': {} },
   resolve: {
