@@ -7,7 +7,6 @@
     "build": "vite build",
     "dev": "vite"
   },
-  "main": "background.js",
   "dependencies": {
     "@mdi/font": "^6.6.96",
     "@vueuse/core": "^8.2.5",
