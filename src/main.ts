@@ -1,19 +1,13 @@
 import App from './App.vue'
-import { ViteSSG } from 'vite-ssg'
+import { createApp } from 'vue'
 import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from 'virtual:generated-pages'
 import vuetify from './plugins/vuetify'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = setupLayouts(generatedRoutes)
 
-export const createApp = ViteSSG(
-  // the root component
-  App,
-  // vue-router options
-  { routes },
-  // function to have custom setups
-  ({ app, router, routes, isClient, initialState }) => {
-    // install plugins etc.
-    app.use(vuetify)
-  }
-)
+const app = createApp(App)
+app.use(vuetify)
+app.use(createRouter({ routes, history: createWebHistory() }))
+app.mount('#app')
