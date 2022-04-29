@@ -75,9 +75,9 @@
   </v-container>
 </template>
 <script lang="ts" setup>
-import members from '@/members'
+import members from '@/data/members'
 
 function procAvatar(avatar: string) {
-  return '/src/assets/avatars/' + avatar
+  return new URL('@/assets/avatars/' + avatar, import.meta.url)
 }
 </script>

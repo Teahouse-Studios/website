@@ -93,7 +93,7 @@
 <script lang="ts" setup>
 import TFooter from '@/components/TFooter.vue'
 import THeader from '@/components/THeader.vue'
-import members from '@/members'
+import members from '@/data/members'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
