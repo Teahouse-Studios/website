@@ -25,7 +25,7 @@
           </v-list-item-header>
 
           <template #append>
-            <v-list-item-avatar end>
+            <div>
               <v-btn
                 v-if="m.email"
                 size="small"
@@ -66,7 +66,7 @@
                 :icon="mdiWeb"
                 :href="`${m.website}`"
               ></v-btn>
-            </v-list-item-avatar>
+            </div>
           </template>
         </v-list-item>
         <v-divider></v-divider>
