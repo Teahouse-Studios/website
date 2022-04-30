@@ -66,11 +66,15 @@
             </v-row>
           </div>
 
-          <v-list-item-subtitle>
+          <v-list-item-subtitle class="text-subtitle">
             {{ member.title.join(' · ') }}
           </v-list-item-subtitle>
-          <v-list-item-subtitle>
-            {{ member.email }}&ZeroWidthSpace;&#64;&ZeroWidthSpace;teahou.se
+          <v-list-item-subtitle class="text-subtitle" v-if="member.email">
+            <a :href="`mailto:${member.email}`"
+              >{{
+                member.email
+              }}&ZeroWidthSpace;&#64;&ZeroWidthSpace;teahou.se</a
+            >
           </v-list-item-subtitle>
 
           <v-divider class="my-6"></v-divider>
