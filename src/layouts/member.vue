@@ -117,10 +117,6 @@ function procAvatar(avatar: string) {
 <style lang="scss">
 @import '@/styles/markdown.scss';
 
-html {
-  overflow-y: hidden;
-}
-
 a:not(:hover) {
   text-decoration: none;
 }
