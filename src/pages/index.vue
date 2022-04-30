@@ -87,7 +87,7 @@
               <v-btn
                 to="/members/"
                 variant="text"
-                prepend-icon="mdi-account-multiple"
+                :prepend-icon="mdiAccountMultiple"
                 class="mb-3"
               >
                 了解成员
@@ -201,7 +201,13 @@
 </template>
 
 <script lang="ts" setup>
-import { mdiArrowRight, mdiApps, mdiCash, mdiChevronDown } from '@mdi/js'
+import {
+  mdiAccountMultiple,
+  mdiArrowRight,
+  mdiApps,
+  mdiCash,
+  mdiChevronDown,
+} from '@mdi/js'
 
 import ExLink from '@/components/ExLink.vue'
 

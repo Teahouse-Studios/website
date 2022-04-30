@@ -18,10 +18,7 @@
               <v-col cols="12" md="6">
                 <h1 class="text-h4 mt-6 mb-3 d-inline-block">
                   <v-avatar size="50"
-                    ><v-img
-                      :src="`/src/assets/avatars/${member.avatar}`"
-                      width="70"
-                    ></v-img
+                    ><v-img :src="procAvatar(member.avatar)" width="70"></v-img
                   ></v-avatar>
                   <span class="ml-3" style="vertical-align: middle">{{
                     member.name
@@ -108,6 +105,10 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const name = route.path.split('/').pop()
 const member = members.find((m) => m.name === name)!
+
+function procAvatar(avatar: string) {
+  return new URL(`../assets/avatars/${avatar}`, import.meta.url).href
+}
 </script>
 <style lang="scss">
 @import '@/styles/markdown.scss';

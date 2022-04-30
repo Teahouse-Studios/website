@@ -81,6 +81,6 @@ import { siFandom } from 'simple-icons/icons'
 import members from '@/data/members'
 
 function procAvatar(avatar: string) {
-  return new URL('@/assets/avatars/' + avatar, import.meta.url)
+  return new URL(`../../assets/avatars/${avatar}`, import.meta.url).href
 }
 </script>
