@@ -16,7 +16,9 @@ async function start() {
   for (let task of tasks) {
     await s3
       .putObject({
-        Key: `${process.env.PROJ_NAME}/${task}`,
+        Key: `${
+          process.env.PROJ_NAME ? `/${process.env.PROJ_NAME}` : ''
+        }${task}`,
         Body: fs.createReadStream(
           require('path').resolve(__dirname, prefix, task)
         ),
