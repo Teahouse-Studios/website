@@ -9,7 +9,7 @@
             to="/members/"
             variant="text"
             size="small"
-            prepend-icon="mdi-chevron-left"
+            :prepend-icon="mdiChevronLeft"
             >成员</v-btn
           >
           <v-divider class="mt-2"></v-divider>
@@ -34,35 +34,35 @@
                   v-if="member.email"
                   variant="text"
                   color="grey lighten-1"
-                  icon="mdi-email"
+                  :icon="mdiEmail"
                   :href="`mailto:${member.email}@teahou.se`"
                 ></v-btn>
                 <v-btn
                   v-if="member.github"
                   variant="text"
                   color="grey lighten-1"
-                  icon="mdi-github"
+                  :icon="mdiGithub"
                   :href="`https://github.com/${member.github}`"
                 ></v-btn>
                 <v-btn
                   v-if="member.twitter"
                   variant="text"
                   color="grey lighten-1"
-                  icon="mdi-twitter"
+                  :icon="mdiTwitter"
                   :href="`https://twitter.com/${member.twitter}`"
                 ></v-btn>
                 <v-btn
                   v-if="member.wiki"
                   variant="text"
                   color="grey lighten-1"
-                  icon="mdi-wikipedia"
-                  :href="`https://twitter.com/${member.wiki}`"
+                  :icon="siFandom.path"
+                  :href="`https://minecraft.fandom.com/zh/wiki/User:${member.wiki}`"
                 ></v-btn>
                 <v-btn
                   v-if="member.website"
                   variant="text"
                   color="grey lighten-1"
-                  icon="mdi-web"
+                  :icon="mdiWeb"
                   :href="`${member.website}`"
                 ></v-btn>
               </v-col>
@@ -91,6 +91,15 @@
   </v-app>
 </template>
 <script lang="ts" setup>
+import {
+  mdiChevronLeft,
+  mdiEmail,
+  mdiGithub,
+  mdiTwitter,
+  mdiWeb,
+} from '@mdi/js'
+import { siFandom } from 'simple-icons/icons'
+
 import TFooter from '@/components/TFooter.vue'
 import THeader from '@/components/THeader.vue'
 import members from '@/data/members'

@@ -1,3 +1,4 @@
+import '@/styles/app.scss'
 import App from './App.vue'
 import { createApp } from 'vue'
 import { setupLayouts } from 'virtual:generated-layouts'

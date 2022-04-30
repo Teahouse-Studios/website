@@ -1,3 +1,5 @@
+import { mdiCloudDownload, mdiGithub } from '@mdi/js'
+
 const products: Product[] = [
   {
     name: '梗体中文',
@@ -8,12 +10,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],
@@ -27,12 +29,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],
@@ -46,12 +48,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],
@@ -65,12 +67,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],
@@ -84,12 +86,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],
@@ -103,12 +105,12 @@ const products: Product[] = [
       {
         href: 'https://dl.meme.teahou.se/',
         text: '在线构建',
-        icon: 'mdi-cloud-download',
+        icon: mdiCloudDownload,
       },
       {
         href: 'https://github.com/Teahouse-Studios/mcwzh-meme-resourcepack',
         text: 'GitHub',
-        icon: 'mdi-github',
+        icon: mdiGithub,
       },
     ],
     tags: ['Minecraft', '资源包'],

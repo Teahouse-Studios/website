@@ -16,10 +16,6 @@ import TFooter from '@/components/TFooter.vue'
 import THeader from '@/components/THeader.vue'
 </script>
 <style>
-html {
-  overflow-y: hidden;
-}
-
 a:not(:hover) {
   text-decoration: none;
 }

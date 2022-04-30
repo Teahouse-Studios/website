@@ -8,7 +8,6 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@mdi/font": "^6.6.96",
     "@vueuse/core": "^8.2.5",
     "@vueuse/head": "^0.7.5",
     "vue": "^3.2.31",
@@ -17,6 +16,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@mdi/js": "^6.6.96",
     "@types/webfontloader": "^1.6.34",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
@@ -26,6 +26,7 @@
     "markdown-it-prism": "^2.2.3",
     "rollup-plugin-visualizer": "^5.6.0",
     "sass": "^1.50.0",
+    "simple-icons": "^6.19.0",
     "typescript": "^4.6.3",
     "unplugin-vue-components": "^0.19.2",
     "vite": "^2.9.1",

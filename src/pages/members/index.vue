@@ -31,7 +31,7 @@
                 size="small"
                 variant="text"
                 color="grey lighten-1"
-                icon="mdi-email"
+                :icon="mdiEmail"
                 :href="`mailto:${m.email}@teahou.se`"
               ></v-btn>
               <v-btn
@@ -39,7 +39,7 @@
                 size="small"
                 variant="text"
                 color="grey lighten-1"
-                icon="mdi-github"
+                :icon="mdiGithub"
                 :href="`https://github.com/${m.github}`"
               ></v-btn>
               <v-btn
@@ -47,7 +47,7 @@
                 size="small"
                 variant="text"
                 color="grey lighten-1"
-                icon="mdi-twitter"
+                :icon="mdiTwitter"
                 :href="`https://twitter.com/${m.twitter}`"
               ></v-btn>
               <v-btn
@@ -55,15 +55,15 @@
                 size="small"
                 variant="text"
                 color="grey lighten-1"
-                icon="mdi-wikipedia"
-                :href="`https://twitter.com/${m.wiki}`"
+                :icon="siFandom.path"
+                :href="`https://minecraft.fandom.com/zh/wiki/${m.wiki}`"
               ></v-btn>
               <v-btn
                 v-if="m.website"
                 size="small"
                 variant="text"
                 color="grey lighten-1"
-                icon="mdi-web"
+                :icon="mdiWeb"
                 :href="`${m.website}`"
               ></v-btn>
             </v-list-item-avatar>
@@ -75,6 +75,9 @@
   </v-container>
 </template>
 <script lang="ts" setup>
+import { mdiEmail, mdiGithub, mdiTwitter, mdiWeb } from '@mdi/js'
+import { siFandom } from 'simple-icons/icons'
+
 import members from '@/data/members'
 
 function procAvatar(avatar: string) {

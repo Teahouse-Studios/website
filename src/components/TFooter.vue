@@ -8,9 +8,9 @@
       <v-col md="6" sm="12" class="text-center text-md-left pb-0">
         <div style="line-height: 1.618; font-size: 14px">
           <v-btn variant="text" class="text-white" to="/terms/"
-            ><v-icon left>mdi-script</v-icon> 服务条款</v-btn
+            ><v-icon left>{{ mdiScript }}</v-icon> 服务条款</v-btn
           ><v-btn variant="text" class="text-white" to="/privacy/"
-            ><v-icon left>mdi-lock</v-icon> 隐私政策</v-btn
+            ><v-icon left>{{ mdiLock }}</v-icon> 隐私政策</v-btn
           >
         </div>
       </v-col>
@@ -38,3 +38,6 @@
     </v-row>
   </v-footer>
 </template>
+<script lang="ts" setup>
+import { mdiScript, mdiLock } from '@mdi/js'
+</script>

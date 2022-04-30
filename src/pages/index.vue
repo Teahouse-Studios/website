@@ -21,12 +21,12 @@
               <div class="mb-3">
                 <v-btn
                   variant="text"
-                  prepend-icon="mdi-arrow-right"
+                  :prepend-icon="mdiArrowRight"
                   @click="$refs.about.scrollIntoView({ behavior: 'smooth' })"
                 >
                   了解更多
                 </v-btn>
-                <v-btn variant="text" prepend-icon="mdi-cash" color="#946ce6">
+                <v-btn variant="text" :prepend-icon="mdiCash" color="#946ce6">
                   发电
                 </v-btn>
               </div>
@@ -125,7 +125,7 @@
               <v-btn
                 to="/products/meme/"
                 variant="text"
-                prepend-icon="mdi-arrow-right"
+                :prepend-icon="mdiArrowRight"
                 class="mb-3"
               >
                 了解更多
@@ -150,7 +150,7 @@
               <v-btn
                 to="/products/meme/"
                 variant="text"
-                prepend-icon="mdi-arrow-right"
+                :prepend-icon="mdiArrowRight"
                 class="mb-3"
               >
                 了解更多
@@ -176,7 +176,7 @@
               <v-btn
                 to="/products/meme/"
                 variant="text"
-                prepend-icon="mdi-arrow-right"
+                :prepend-icon="mdiArrowRight"
                 class="mb-3"
               >
                 了解更多
@@ -184,7 +184,7 @@
             </div>
           </v-col>
           <v-col cols="12" class="text-center">
-            <v-btn to="/products/" variant="text" prepend-icon="mdi-apps"
+            <v-btn to="/products/" variant="text" :prepend-icon="mdiApps"
               >更多产品</v-btn
             >
           </v-col>
@@ -195,12 +195,14 @@
       class="d-flex justify-center text-body-2"
       style="position: fixed; bottom: 10px; width: 100%"
     >
-      <v-icon left>mdi-chevron-down</v-icon> 向下滚动
+      <v-icon left>{{ mdiChevronDown }}}</v-icon> 向下滚动
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { mdiArrowRight, mdiApps, mdiCash, mdiChevronDown } from '@mdi/js'
+
 import ExLink from '@/components/ExLink.vue'
 
 let video = $ref(0)

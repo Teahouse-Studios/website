@@ -3,157 +3,39 @@ meta:
   layout: member
 </route>
 
-# :sparkles: vue3-markdown-it demo :sparkles:
+<img align="right" alt="GIF" src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif" />
 
-> Welcome to the <b>demo</b> Feel free to type anything in the textarea!
->
-> > _Psst, enable the `html` option!_ :P
+### Hi there 👋
 
-https://github.com/JanGuillermo/vue3-markdown-it (_Enable the `linkify` option!~_)
+I'm ⚡️ **Dianliang233**, a 📖 **student** from 🇨🇳 China.
 
----
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 
-## This is a h2 tag
+#### Contact
 
-Freaky, right? Oh yeah, have you seen this ~~horrible~~ **amazing** repository [here](https://github.com/JanGuillermo/vue3-markdown-it)?!
+- Via E-mail: [dianliang233(at)gmail.com](mailto:dianliang233@gmail.com) or [dianliang233(at)qq.com](mailto:dianliang233@qq.com)
+- Via GitHub issues: [New issue · dianliang233/dianliang233](https://github.com/dianliang233/dianliang233/issues/new)
+- Via [QQ](https://im.qq.com): 2917830075
+- Via [Discord](https://discord.com): Dianliang233#8468
+- Via [Telegram](https://telegram.org): [@Dianliang233](https://t.me/Dianliang233)
 
-So far, it supports the following plugins:
+#### Contribution
 
-- [markdown-it-abbr](https://github.com/markdown-it/markdown-it-abbr) - Add abbreviations
-- [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor) - Add anchors
-- [markdown-it-deflist](https://github.com/markdown-it/markdown-it-deflist) - Add definition lists
-- [markdown-it-emoji](https://github.com/markdown-it/markdown-it-emoji) - Add emojis
-- [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) - Add footnotes
-- [markdown-it-highlightjs](https://github.com/valeriangalliat/markdown-it-highlightjs) - Add highlighting for code blocks
-- [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins) - Add `<ins>` tags
-- [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark) - Add marking/highlighting
-- [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub) - Add subscript
-- [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup) - Add superscript
-- [markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists) - Add task lists
-- [markdown-it-toc-done-right](https://github.com/nagaozen/markdown-it-toc-done-right) - Add table of contents
+- Active editor - [Minecraft Wiki (ZH)](https://minecraft-zh.gamepedia.com/Minecraft_Wiki)
+- Member of Fandom [Chinese Pre-volunteering Team (PVT-ZH)](https://community.fandom.com/zh/wiki/ZHCC:PVT/en)
+- Crew - [Fandom Chinese Community Central](https://community.fandom.com/zh/)
+- Simplified Chinese translator and founder of Classical Chinese translation project - [Minecraft](https://crowdin.com/project/minecraft)
+- Frontend engineer and co-founder - [Teahouse Studios](https://github.com/Teahouse-Studios)
 
-### This is a h3 tag
+##### Other translation projects
 
-#### This is a h^4^ tag.
-
-Enable the `typographer` option to see the magic.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+- [Sodium - optimization mod for the Minecraft client (zh-cn)](https://github.com/jellysquid3/sodium-fabric)
+- [Wiki-Bot - a Discord bot for easily linking and searching MediaWiki sites (zh-cn)](https://github.com/Markus-Rost/discord-wiki-bot)
+- [MCLangCN - An optimised Chinese Simplified translation for Minecraft Bedrock Edition (zh-cn)](https://github.com/ff98sha/mclangcn)
 
 ---
 
-## Basic stuff
-
-## Lists
-
-Sometimes you want numbered lists:
-
-1. One
-2. Two
-3. Three
-
-Sometimes you want bullet points:
-
-- Start a line with a star
-- Profit!
-
-Alternatively,
-
-- Dashes work just as well
-- And if you have sub points, put two spaces before the dash or star:
-  - Like this
-  - And this
-
-## Blockquotes
-
-As Abraham Lincoln once said:
-
-> vue3-markdown-it is pretty amazing!
-
-## Tables
-
-| First Header                | Second Header                |
-| --------------------------- | ---------------------------- |
-| Content from cell 1         | Content from cell 2          |
-| Content in the first column | Content in the second column |
-
----
-
-# Anyway, guess what?!
-
-![pog](https://cdn.frankerfacez.com/emoticon/305343/4)
-
-We support plugging in external `markdown-it` plugins! [markdown-it-icons](https://github.com/tylingsoft/markdown-it-icons) was added as an external plugin. Let's test it out!
-
-A :fa-car: runs!
-
-# Ok, plugin showcase time!
-
-## [markdown-it-abbr](https://github.com/markdown-it/markdown-it-abbr)
-
-_[HTML]: Hyper Text Markup Language
-_[W3C]: World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-
-## [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor)
-
-Hard to display this, but if you view the source, you can see that all headings have an id generated from this plugin!
-
-## [markdown-it-deflist](https://github.com/markdown-it/markdown-it-deflist)
-
-First Term
-: This is the definition of the first term.
-
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
-
-## [markdown-it-emoji](https://github.com/markdown-it/markdown-it-emoji)
-
-:O :) :sparkles: 8-)
-
-## [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote)
-
-Here is a footnote reference,[^1] and another.[^longnote]
-
-## [markdown-it-highlightjs](https://github.com/valeriangalliat/markdown-it-highlightjs)
-
-```python
-print("Hello World! This is Python.")
-```
-
-```js
-console.log('Hello World! This is JavaScript.')
-```
-
-## [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins)
-
-++this is inserted++
-
-## [markdown-it-mark](https://github.com/markdown-it/markdown-it-mark)
-
-==Oh hi, Mark.==
-
-## [markdown-it-sub](https://github.com/markdown-it/markdown-it-sub)
-
-C~7~H~14~O~2~
-
-## [markdown-it-sup](https://github.com/markdown-it/markdown-it-sup)
-
-Friday the 13^th^
-
-## [markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists)
-
-- [ ] Homework
-- [x] Procrastinating
-
-## [markdown-it-toc-done-right](https://github.com/nagaozen/markdown-it-toc-done-right)
-
-[toc]
-
-[^1]: Here is the footnote.
-[^longnote]: Here's one with multiple blocks.
-
-    Subsequent paragraphs are indented to show that they
-    belong to the previous footnote.
+![@Dianliang233](https://github-readme-stats.vercel.app/api?username=dianliang233&count_private=true&show_icons=true&theme=tokyonight)

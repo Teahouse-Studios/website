@@ -7,8 +7,18 @@ const members: Member[] = [
     github: 'Dianliang233',
     twitter: 'Dianliang233',
     wiki: 'Dianliang233',
-    website: 'https://dianliang233.github.io/',
     email: 'dianliang',
+  },
+  {
+    name: 'Lakejason0',
+    title: ['联合创始人', 'Reviewer'],
+    avatar: 'lakejason0.png',
+    markdown: 'lakejason0.md',
+    github: 'Lakejason0',
+    twitter: 'Lakejason0',
+    wiki: 'Lakejason0',
+    email: 'lakejason0',
+    website: 'https://lakeus.xyz/',
   },
 ]
 

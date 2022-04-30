@@ -41,10 +41,10 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@mdi/font@^6.6.96":
+"@mdi/js@^6.6.96":
   version "6.6.96"
-  resolved "https://registry.npmjs.org/@mdi/font/-/font-6.6.96.tgz#4eee6faee5f44d3ec401d354fb95775cd6699575"
-  integrity sha512-FbcvG9z17hwZ7IwX5XeOR1UYGoLq+gTKq6XNPvJFuCpn599GdiPCJbAmmDBJb+jMYXjKYr0lCxfouWGxDA82sA==
+  resolved "https://registry.npmjs.org/@mdi/js/-/js-6.6.96.tgz#119f79fa9327359421167a7d4b8bde26e84702ce"
+  integrity sha512-ke9PN5DjPCOlMfhioxeZYADz8Yiz6v47W0IYRza01SSJD7y1EwESVpwFnnFUso+eCoWtE1CO9cTIvQF6sEreuA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2080,6 +2080,11 @@ side-channel@^1.0.3, side-channel@^1.0.4:
     call-bind "^1.0.0"
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
+
+simple-icons@^6.19.0:
+  version "6.19.0"
+  resolved "https://registry.npmjs.org/simple-icons/-/simple-icons-6.19.0.tgz#98ed8cbb2649625813721a5c9a8eb0bcafd304e4"
+  integrity sha512-HI7X+Ibu9FbphEJZzkOGu820Mp9JhUEAGf3qjooQkBXSgASt3HCJlhVsKxLzPAaXiSSMWupsf+rB2DwFQbRrKg==
 
 slash@^3.0.0:
   version "3.0.0"
