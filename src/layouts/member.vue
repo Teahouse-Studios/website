@@ -69,7 +69,7 @@
           <v-list-item-subtitle class="text-subtitle">
             {{ member.title.join(' · ') }}
           </v-list-item-subtitle>
-          <v-list-item-subtitle class="text-subtitle" v-if="member.email">
+          <v-list-item-subtitle v-if="member.email" class="text-subtitle">
             <a :href="`mailto:${member.email}`"
               >{{
                 member.email
