@@ -81,7 +81,7 @@
           <v-list-item-subtitle class="mb-3">介绍</v-list-item-subtitle>
           <v-card>
             <v-container>
-              <router-view />
+              <router-view class="markdown-render" />
             </v-container>
           </v-card>
         </v-container>
@@ -97,7 +97,7 @@ import members from '@/data/members'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const name = route.params.name
+const name = route.path.split('/').pop()
 const member = members.find((m) => m.name === name)!
 </script>
 <style lang="scss">

@@ -19,13 +19,20 @@ export default defineConfig({
     }),
     markdown({
       markdownItUses: [prism],
-      builders: [meta()],
+      builders: [
+        meta({
+          routeProps: ['layout'],
+        }),
+      ],
     }),
     components({
       resolvers: [Vuetify3Resolver()],
       extensions: ['vue', 'md'],
     }),
-    layouts(),
+    layouts({
+      layoutsDirs: 'src/layouts',
+      defaultLayout: 'default',
+    }),
     pages({
       extensions: ['vue', 'md'],
     }),

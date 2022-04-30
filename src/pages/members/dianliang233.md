@@ -1,3 +1,8 @@
+<route lang="yaml">
+meta:
+  layout: member
+</route>
+
 # :sparkles: vue3-markdown-it demo :sparkles:
 
 > Welcome to the <b>demo</b> Feel free to type anything in the textarea!
