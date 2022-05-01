@@ -16,7 +16,7 @@
 
           <v-list-item-header class="ml-4">
             <v-list-item-title>{{ m.name }}</v-list-item-title>
-            <v-list-item-subtitle>
+            <v-list-item-subtitle style="text-overflow: unset; display: unset">
               {{ m.title.join(' · ') }}
             </v-list-item-subtitle>
             <v-list-item-subtitle>
