@@ -19,7 +19,7 @@ Probably people from Jiangsu Province won't say that they're from Jiangsu?
 
 在茶馆工作室里，我主要负责一些基岩版方面的工作。
 
-欢迎访问自建的 Wiki：[https://mh.wdf.ink/ **奇葩栖息地**]。
+欢迎访问自建的 Wiki：[**奇葩栖息地**](https://mh.wdf.ink/)。
 
 所作所为若有不妥，还请**不吝赐教**，在下不胜感激。
 
@@ -27,19 +27,15 @@ I am an editor of Minecraft Wiki (ZH), and I'll appear in various wikis from tim
 
 In Teahouse Studios, I'm mainly responsible for some work on Bedrock Edition.
 
-Welcome to my self-built Wiki: [https://mh.wdf.ink/ **Miracle Habitat**].
+Welcome to my self-built Wiki: [**Miracle Habitat**](https://mh.wdf.ink/).
 
 If there's anything wrong with what I've done, please **don't** hesitate to let me know, I would be very grateful.
 
 ## 联系 / Contact
 
-- Bilibili: [https://space.bilibili.com/404660313 SkyEye_FAST]
-- Email: [mailto:skyeyefast@qq.com skyeyefast@qq.com] / [mailto:skyeyefast@outlook.com skyeyefast@outlook.com]
-- Twitter: [https://twitter.com/SkyEye_FAST @SkyEye_FAST]
+- Bilibili: [SkyEye_FAST](https://space.bilibili.com/404660313)
 - Discord: SkyEye_FAST#3550
-- GitHub: [https://github.com/SkyEye-FAST SkyEye-FAST]
-- Minecraft Wiki (ZH), Fandom: [https://minecraft.fandom.com/zh/wiki/User:SkyEye_FAST SkyEye_FAST]
-- MCBBS: [http://www.mcbbs.net/?2528514 SkyEye_FAST]
+- MCBBS: [SkyEye_FAST](http://www.mcbbs.net/?2528514)
 
 ## 游戏 ID / Game ID
 
