@@ -68,7 +68,7 @@
 
           <v-list-item-subtitle class="text-subtitle">
             <v-icon size="x-small" class="mr-1">{{ mdiBriefcase }} </v-icon
-            >{{ member.title.join(' · ') }}
+            >{{ member.title.join('、') }}
           </v-list-item-subtitle>
           <v-list-item-subtitle v-if="member.email" class="text-subtitle">
             <v-icon size="x-small" class="mr-1">{{ mdiEmail }} </v-icon

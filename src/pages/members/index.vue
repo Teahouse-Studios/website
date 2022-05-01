@@ -17,10 +17,12 @@
           <v-list-item-header class="ml-4">
             <v-list-item-title>{{ m.name }}</v-list-item-title>
             <v-list-item-subtitle style="text-overflow: unset; display: unset">
-              {{ m.title.join(' · ') }}
+              <v-icon size="x-small" class="mr-1">{{ mdiBriefcase }} </v-icon
+              >{{ m.title.join('、') }}
             </v-list-item-subtitle>
             <v-list-item-subtitle>
-              {{ m.email }}&ZeroWidthSpace;&#64;&ZeroWidthSpace;teahou.se
+              <v-icon size="x-small" class="mr-1">{{ mdiEmail }} </v-icon
+              >{{ m.email }}&ZeroWidthSpace;&#64;&ZeroWidthSpace;teahou.se
             </v-list-item-subtitle>
           </v-list-item-header>
 
@@ -75,7 +77,7 @@
   </v-container>
 </template>
 <script lang="ts" setup>
-import { mdiEmail, mdiGithub, mdiTwitter, mdiWeb } from '@mdi/js'
+import { mdiEmail, mdiGithub, mdiTwitter, mdiWeb, mdiBriefcase } from '@mdi/js'
 import { siFandom } from 'simple-icons/icons'
 
 import members from '@/data/members'
