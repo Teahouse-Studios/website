@@ -14,7 +14,7 @@
                   我们不断前进。
                 </div>
                 <div class="text-subtitle-1 mb-3">
-                  问谛居茶馆工作室专注于 Minecraft
+                  茶馆工作室专注于 Minecraft
                   等游戏的周边内容创作，创作出了多款创意资源、语言附加包，致力于为玩家提供更欢乐的游戏体验。
                 </div>
               </div>
