@@ -116,7 +116,7 @@ const members: Member[] = [
   {
     name: 'Olvcpr423',
     title: ['成员'],
-    avatar: 'Olvcpr423.png',
+    avatar: 'Olvcpr423.jpg',
     page: 'Olvcpr423',
     github: 'Olvcpr423',
     wiki: 'Olvcpr423',
