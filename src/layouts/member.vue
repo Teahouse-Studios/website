@@ -108,7 +108,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const name = route.path.split('/').pop()
-const member = members.find((m) => m.name === name)!
+const member = members.find((m) => m.page === name)!
 
 function procAvatar(avatar: string) {
   return new URL(`../assets/avatars/${avatar}`, import.meta.url).href

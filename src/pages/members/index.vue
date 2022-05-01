@@ -7,7 +7,7 @@
     </p>
     <v-list class="m-5">
       <div v-for="m in members" :key="m.name">
-        <v-list-item three-line :to="`/members/${m.name}`">
+        <v-list-item three-line :to="`/members/${m.page}`">
           <v-list-item-avatar>
             <v-avatar size="70">
               <v-img :src="procAvatar(m.avatar)" width="70"></v-img>
