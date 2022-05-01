@@ -1,7 +1,7 @@
 const members: Member[] = [
   {
     name: 'Dianliang233',
-    title: ['联合创始人', '综合开发者'],
+    title: ['联合创始人', '综合开发者', '公关'],
     avatar: 'Dianliang233.png',
     page: 'Dianliang233',
     github: 'Dianliang233',
@@ -22,7 +22,7 @@ const members: Member[] = [
   },
   {
     name: 'DoroWolf',
-    title: ['联合创始人', '梗中模块作者', '吉祥物'],
+    title: ['联合创始人', '梗中模块作者', '公关', '吉祥物'],
     avatar: 'DoroWolf.jpg',
     page: 'DoroWolf',
     github: 'DoroWolf',
@@ -51,7 +51,12 @@ const members: Member[] = [
   },
   {
     name: 'ff98sha',
-    title: ['荣誉成员', '项目宣发', '中文 Minecraft Wiki 行政员'],
+    title: [
+      '荣誉成员',
+      '项目宣发',
+      '基岩版译名修正作者',
+      '中文 Minecraft Wiki 行政员',
+    ],
     avatar: 'ff98sha.png',
     page: 'ff98sha',
     github: 'ff98sha',
@@ -86,6 +91,27 @@ const members: Member[] = [
     github: 'Hatsuki-kiri',
     wiki: 'Hatsuki_kiri',
     email: 'foxwesty',
+  },
+  {
+    name: 'SkyEye_FAST',
+    title: ['联合创始人', '梗中基岩版主管', '公关'],
+    avatar: 'SkyEye_FAST.png',
+    page: 'SkyEye-FAST',
+    github: 'SkyEye-FAST',
+    twitter: 'SkyEye_FAST',
+    wiki: 'SkyEye_FAST',
+    email: 'skyeyefast',
+    website: 'https://mh.wdf.ink/',
+  },
+  {
+    name: 'Jingji132',
+    title: ['基岩版译名修正贡献者'],
+    avatar: 'Jingji132.png',
+    page: 'Jingji132',
+    github: 'Jingji132',
+    wiki: 'Jingji132',
+    email: 'jingji132',
+    website: 'https://lakeus.xyz/',
   },
 ]
 
