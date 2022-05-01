@@ -105,13 +105,23 @@ const members: Member[] = [
   },
   {
     name: 'Jingji132',
-    title: ['基岩版译名修正贡献者'],
+    title: ['成员', '基岩版译名修正贡献者'],
     avatar: 'Jingji132.png',
     page: 'Jingji132',
     github: 'Jingji132',
     wiki: 'Jingji132',
     email: 'jingji132',
     website: 'https://lakeus.xyz/',
+  },
+  {
+    name: 'Olvcpr423',
+    title: ['成员'],
+    avatar: 'Olvcpr423.png',
+    page: 'Olvcpr423',
+    github: 'Olvcpr423',
+    wiki: 'Olvcpr423',
+    email: 'olvcpr423',
+    website: 'https://olvcpr423.github.io/',
   },
 ]
 
