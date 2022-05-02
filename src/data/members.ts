@@ -85,7 +85,7 @@ const members: Member[] = [
   },
   {
     name: 'Hatsuki kiri',
-    title: ['成员', 'MediaWiki指导专员', '中文 Minecraft Wiki 管理员'],
+    title: ['成员', '中文 Minecraft Wiki 管理员'],
     avatar: 'Hatsuki_kiri.jpg',
     page: 'Hatsuki-kiri',
     github: 'Hatsuki-kiri',
@@ -122,6 +122,26 @@ const members: Member[] = [
     wiki: 'Olvcpr423',
     email: 'olvcpr423',
     website: 'https://olvcpr423.github.io/',
+  },
+  {
+    name: '最亮的信标',
+    title: ['成员'],
+    avatar: 'Light_Beacon.png',
+    page: 'Light-Beacon',
+    github: 'Light-Beacon',
+    twitter: 'Nattiden',
+    wiki: 'Light_beacon',
+    email: 'light',
+    website: 'https://www.lightbeacon.top/',
+  },
+  {
+    name: 'MysticNabula70',
+    title: ['联合创始人', 'JavaScript 开发者', '中文 Minecraft Wiki 管理员'],
+    avatar: 'MysticNabula70.png',
+    page: 'MysticNabula70',
+    github: 'AlPha5130',
+    wiki: 'MysticNabula70',
+    email: 'mysticnebula70',
   },
 ]
 
