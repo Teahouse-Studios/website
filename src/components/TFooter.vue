@@ -10,29 +10,24 @@
           <span class="text-overline mr-3" style="vertical-align: middle"
             >关注我们</span
           >
-          <v-btn
-            variant="text"
-            icon
-            color="white"
-            href="https://teahouse.team/"
-          >
+          <v-btn variant="text" icon href="https://teahouse.team/">
             <v-icon size="small">{{ mdiWeb }}</v-icon>
           </v-btn>
-          <v-btn
-            variant="text"
-            icon
-            color="white"
-            href="mailto:admin@teahou.se"
-          >
+          <v-btn variant="text" icon href="mailto:admin@teahou.se">
             <v-icon size="small">{{ mdiEmail }}</v-icon>
           </v-btn>
           <v-btn
             variant="text"
             icon
-            color="white"
             href="https://space.bilibili.com/406275313"
           >
             <v-icon size="small">{{ siBilibili.path }}</v-icon>
+          </v-btn>
+          <v-btn variant="text" icon href="https://github.com/Teahouse-Studios">
+            <v-icon>{{ mdiGithub }}</v-icon>
+          </v-btn>
+          <v-btn variant="text" icon href="https://afdian.net/@teahouse">
+            <v-icon>{{ mdiCash }}</v-icon>
           </v-btn>
 
           <br />
@@ -40,17 +35,9 @@
           <span class="text-overline mr-3" style="vertical-align: middle"
             >法律</span
           >
-          <v-btn
-            variant="text"
-            class="text-white"
-            to="/terms/"
-            :prepend-icon="mdiScript"
+          <v-btn variant="text" to="/terms/" :prepend-icon="mdiScript"
             >服务条款</v-btn
-          ><v-btn
-            variant="text"
-            class="text-white"
-            to="/privacy/"
-            :prepend-icon="mdiLock"
+          ><v-btn variant="text" to="/privacy/" :prepend-icon="mdiLock"
             >隐私政策</v-btn
           >
         </v-col>
@@ -78,6 +65,13 @@
   </v-footer>
 </template>
 <script lang="ts" setup>
-import { mdiScript, mdiLock, mdiWeb, mdiEmail } from '@mdi/js'
+import {
+  mdiScript,
+  mdiLock,
+  mdiWeb,
+  mdiEmail,
+  mdiGithub,
+  mdiCash,
+} from '@mdi/js'
 import { siBilibili } from 'simple-icons/icons'
 </script>
