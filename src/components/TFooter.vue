@@ -8,7 +8,7 @@
       <v-row>
         <v-col
           md="6"
-          sm="12"
+          cols="12"
           class="text-center text-md-left"
           style="line-height: 24px"
         >
@@ -78,8 +78,8 @@
         </v-col>
         <v-col
           md="6"
-          sm="12"
-          class="text-center text-md-right pt-5 d-flex align-end justify-end"
+          cols="12"
+          class="text-center text-md-right pt-5 d-flex align-end justify-center justify-md-end"
         >
           <div>
             <router-link to="/" title="首页">
@@ -91,7 +91,7 @@
                 style="filter: invert(1)"
               />
             </router-link>
-            <div class="text-right text-body-2 copyright">
+            <div class="text-body-2 copyright">
               <p>
                 <a
                   class="text-white text-decoration-none"
