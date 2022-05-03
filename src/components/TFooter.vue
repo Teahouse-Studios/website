@@ -76,7 +76,11 @@
             >
           </div>
         </v-col>
-        <v-col md="6" sm="12" class="text-center text-md-right pt-5">
+        <v-col
+          md="6"
+          sm="12"
+          class="text-center text-md-right pt-5 d-flex align-end justify-end"
+        >
           <div>
             <router-link to="/" title="首页">
               <img
