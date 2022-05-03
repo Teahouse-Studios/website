@@ -52,7 +52,7 @@
               size="small"
               href="https://afdian.net/@teahouse"
             >
-              <v-icon>{{ mdiCash }}</v-icon>
+              <v-icon>{{ mdiBatteryCharging }}</v-icon>
             </v-btn>
           </div>
           <div class="mb-1">
@@ -117,7 +117,7 @@ import {
   mdiWeb,
   mdiEmail,
   mdiGithub,
-  mdiCash,
+  mdiBatteryCharging,
 } from '@mdi/js'
 import { siBilibili } from 'simple-icons/icons'
 </script>

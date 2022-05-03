@@ -25,8 +25,9 @@
         <v-chip
           v-for="t in p.tags"
           :key="t"
+          variant="contained-flat"
+          theme="dark"
           class="ma-2"
-          variant="contained-text"
           v-text="t"
         ></v-chip>
 
@@ -36,9 +37,10 @@
           <v-btn
             v-for="l in p.links"
             :key="l.href"
-            variant="plain"
+            variant="text"
             :href="l.href"
-            ><v-icon left>{{ l.icon }}</v-icon> {{ l.text }}</v-btn
+            :prepend-icon="l.icon"
+            >{{ l.text }}</v-btn
           >
         </v-card-actions>
       </v-card>
@@ -48,7 +50,7 @@
 <script lang="ts" setup>
 import products from '@/data/products'
 
-const getSrc = (name) => {
+const getSrc = (name: string) => {
   const path = `../../assets/products/${name}`
   const modules = import.meta.globEager('@/assets/products/*')
   console.log(modules)
