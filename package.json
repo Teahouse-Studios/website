@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vite preview",
-    "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "yarn run build:client && yarn run build:server",
+    "build:noExternal": "yarn run build:client && yarn run build:server:noExternal",
+    "build:client": "vite build --ssrManifest --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
+    "build:server:noExternal": "vite build --config vite.config.noexternal.ts --ssr src/entry-server.ts --outDir dist/server",
+    "generate": "vite build --ssrManifest --outDir dist/static && yarn run build:server && node prerender.mjs",
+    "serve": "cross-env NODE_ENV=production node server",
+    "debug": "node --inspect-brk server"
   },
   "dependencies": {
     "@vueuse/core": "^8.2.5",
