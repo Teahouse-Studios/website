@@ -1,43 +1,83 @@
 <template>
   <v-footer
     style="background-color: #323437; padding: 30px"
-    class="py-8 px-12"
+    class="pt-10 py-8 px-12 text-white"
     dark
   >
-    <v-row>
-      <v-col md="6" sm="12" class="text-center text-md-left pb-0">
-        <div style="line-height: 1.618; font-size: 14px">
-          <v-btn variant="text" class="text-white" to="/terms/"
-            ><v-icon left>{{ mdiScript }}</v-icon> 服务条款</v-btn
-          ><v-btn variant="text" class="text-white" to="/privacy/"
-            ><v-icon left>{{ mdiLock }}</v-icon> 隐私政策</v-btn
+    <v-container>
+      <v-row>
+        <v-col md="6" sm="12" class="text-center text-md-left">
+          <span class="text-overline mr-3" style="vertical-align: middle"
+            >关注我们</span
           >
-        </div>
-      </v-col>
-      <v-col md="6" sm="12" class="text-center text-md-right pb-0">
-        <router-link to="/" title="首页">
-          <img
-            src="@/assets/logo.svg"
-            alt="Teahouse Studios"
-            height="48"
-            class="mx-auto ml-md-auto mr-md-0"
-            style="filter: invert(1)"
-          />
-        </router-link>
-      </v-col>
-      <v-col cols="12" class="pt-0">
-        <div class="text-right text-body-2 mt-2">
-          <a
-            class="text-white text-decoration-none"
-            href="https://beian.miit.gov.cn/"
+          <v-btn
+            variant="text"
+            icon
+            color="white"
+            href="https://teahouse.team/"
           >
-            蜀 ICP 备 2022011374 号-1
-          </a>
-        </div>
-      </v-col>
-    </v-row>
+            <v-icon size="small">{{ mdiWeb }}</v-icon>
+          </v-btn>
+          <v-btn
+            variant="text"
+            icon
+            color="white"
+            href="mailto:admin@teahou.se"
+          >
+            <v-icon size="small">{{ mdiEmail }}</v-icon>
+          </v-btn>
+          <v-btn
+            variant="text"
+            icon
+            color="white"
+            href="https://space.bilibili.com/406275313"
+          >
+            <v-icon size="small">{{ siBilibili.path }}</v-icon>
+          </v-btn>
+
+          <br />
+
+          <span class="text-overline mr-3" style="vertical-align: middle"
+            >法律</span
+          >
+          <v-btn
+            variant="text"
+            class="text-white"
+            to="/terms/"
+            :prepend-icon="mdiScript"
+            >服务条款</v-btn
+          ><v-btn
+            variant="text"
+            class="text-white"
+            to="/privacy/"
+            :prepend-icon="mdiLock"
+            >隐私政策</v-btn
+          >
+        </v-col>
+        <v-col md="6" sm="12" class="text-center text-md-right pt-5">
+          <router-link to="/" title="首页">
+            <img
+              src="@/assets/logo.svg"
+              alt="Teahouse Studios"
+              height="48"
+              class="mx-auto ml-md-auto mr-md-0"
+              style="filter: invert(1)"
+            />
+          </router-link>
+          <div class="text-right text-body-2">
+            <a
+              class="text-white text-decoration-none"
+              href="https://beian.miit.gov.cn/"
+            >
+              蜀 ICP 备 2022011374 号-1
+            </a>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-footer>
 </template>
 <script lang="ts" setup>
-import { mdiScript, mdiLock } from '@mdi/js'
+import { mdiScript, mdiLock, mdiWeb, mdiEmail } from '@mdi/js'
+import { siBilibili } from 'simple-icons/icons'
 </script>
