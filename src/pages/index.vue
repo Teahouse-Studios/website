@@ -75,6 +75,10 @@
                 v-text="p.title.rendered"
               ></div>
               <div
+                class="text-subtitle-2 mb-3"
+                v-text="formatDate(new Date(p.date))"
+              ></div>
+              <div
                 class="text-subtitle-1 mb-3"
                 v-text="
                   p.yoast_head_json.og_description.replace(/(<([^>]+)>)/gi, '')
@@ -265,6 +269,12 @@ const videos = [
   'https://player.bilibili.com/player.html?aid=716333939&bvid=BV1ZX4y1A7jY&cid=357776775&page=1',
   'https://player.bilibili.com/player.html?aid=889128743&bvid=BV1gK4y1u7Qs&cid=370637043&page=1',
 ]
+
+function formatDate(date: Date) {
+  return `${date.getFullYear()} 年 ${
+    date.getMonth() + 1
+  } 月 ${date.getDate()} 日`
+}
 
 onMounted(async () => {
   posts = await (
