@@ -9,77 +9,81 @@
         <v-col
           md="6"
           cols="12"
-          class="text-center text-md-left"
+          class="link-list d-flex text-left align-center align-md-start flex-column"
           style="line-height: 24px"
         >
           <div>
-            <span class="text-overline mr-3">关注我们</span>
-            <v-btn
-              variant="text"
-              icon
-              size="small"
-              href="https://teahouse.team/"
-            >
-              <v-icon size="small">{{ mdiWeb }}</v-icon>
-            </v-btn>
-            <v-btn
-              variant="text"
-              icon
-              size="small"
-              href="mailto:admin@teahou.se"
-            >
-              <v-icon size="small">{{ mdiEmail }}</v-icon>
-            </v-btn>
-            <v-btn
-              variant="text"
-              icon
-              size="small"
-              href="https://space.bilibili.com/406275313"
-            >
-              <v-icon size="small">{{ siBilibili.path }}</v-icon>
-            </v-btn>
-            <v-btn
-              variant="text"
-              icon
-              size="small"
-              href="https://github.com/Teahouse-Studios"
-            >
-              <v-icon>{{ mdiGithub }}</v-icon>
-            </v-btn>
-            <v-btn
-              variant="text"
-              icon
-              size="small"
-              href="https://afdian.net/@teahouse"
-            >
-              <v-icon size="small">{{ mdiLightningBolt }}</v-icon>
-            </v-btn>
-          </div>
-          <div class="mb-1">
-            <span class="text-overline mr-3">产品</span>
-            <v-btn variant="text" href="https://meme.teahouse.team/">
-              梗体中文
-            </v-btn>
-            <v-btn
-              variant="text"
-              href="https://github.com/Teahouse-Studios/bot"
-            >
-              小可
-            </v-btn>
-          </div>
-          <div class="mb-1">
-            <span class="text-overline mr-3">法律</span>
-            <v-btn variant="text" to="/terms/" :prepend-icon="mdiScript"
-              >服务条款</v-btn
-            ><v-btn variant="text" to="/privacy/" :prepend-icon="mdiLock"
-              >隐私政策</v-btn
-            >
+            <div>
+              <span class="text-overline mr-3 d-block d-md-inline"
+                >关注我们</span
+              >
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="https://teahouse.team/"
+              >
+                <v-icon size="small">{{ mdiWeb }}</v-icon>
+              </v-btn>
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="mailto:admin@teahou.se"
+              >
+                <v-icon size="small">{{ mdiEmail }}</v-icon>
+              </v-btn>
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="https://space.bilibili.com/406275313"
+              >
+                <v-icon size="small">{{ siBilibili.path }}</v-icon>
+              </v-btn>
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="https://github.com/Teahouse-Studios"
+              >
+                <v-icon>{{ mdiGithub }}</v-icon>
+              </v-btn>
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="https://afdian.net/@teahouse"
+              >
+                <v-icon size="small">{{ mdiLightningBolt }}</v-icon>
+              </v-btn>
+            </div>
+            <div class="mb-1">
+              <span class="text-overline mr-3 d-block d-md-inline">产品</span>
+              <v-btn variant="text" href="https://meme.teahouse.team/">
+                梗体中文
+              </v-btn>
+              <v-btn
+                variant="text"
+                href="https://github.com/Teahouse-Studios/bot"
+              >
+                小可
+              </v-btn>
+            </div>
+            <div class="mb-1">
+              <span class="text-overline mr-3 d-block d-md-inline">法律</span>
+              <v-btn variant="text" to="/terms/" :prepend-icon="mdiScript"
+                >服务条款</v-btn
+              ><v-btn variant="text" to="/privacy/" :prepend-icon="mdiLock"
+                >隐私政策</v-btn
+              >
+            </div>
           </div>
         </v-col>
         <v-col
           md="6"
           cols="12"
-          class="text-center text-md-right pt-5 d-flex align-end justify-center justify-md-end"
+          class="text-center text-md-right pt-5 d-flex flex-column align-center align-md-end justify-end"
         >
           <div>
             <router-link to="/" title="首页">
@@ -124,5 +128,9 @@ import { siBilibili } from 'simple-icons/icons'
 <style>
 .copyright p {
   line-height: 24px;
+}
+
+.link-list > div {
+  width: fit-content;
 }
 </style>
