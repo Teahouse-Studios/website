@@ -60,7 +60,7 @@
     <v-divider></v-divider>
     <section>
       <v-container class="d-flex align-center justify-center my-4">
-        <v-row class="px-4">
+        <v-row v-if="posts.length !== 0" class="px-4">
           <v-col
             cols="12"
             class="d-flex align-start justify-start text-h4 font-weight-bold mb-3"
@@ -94,6 +94,7 @@
               </v-btn>
             </v-card>
           </v-col>
+
           <v-col cols="12"
             ><v-btn
               class="ml-auto mr-0"
@@ -103,6 +104,11 @@
               >更多新闻</v-btn
             ></v-col
           >
+        </v-row>
+        <v-row v-else class="px-4">
+          <v-col cols="12" md="4">
+            <v-progress-circular indeterminate></v-progress-circular>
+          </v-col>
         </v-row>
       </v-container>
     </section>
