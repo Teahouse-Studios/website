@@ -17,6 +17,7 @@
               <span class="text-overline mr-3 d-block d-md-inline"
                 >关注我们</span
               >
+
               <v-btn
                 variant="text"
                 icon
@@ -24,6 +25,14 @@
                 href="https://teahouse.team/"
               >
                 <v-icon size="small">{{ mdiWeb }}</v-icon>
+              </v-btn>
+              <v-btn
+                variant="text"
+                icon
+                size="small"
+                href="https://story.teahouse.team/"
+              >
+                <v-icon size="small">{{ mdiNewspaperVariantOutline }}</v-icon>
               </v-btn>
               <v-btn
                 variant="text"
@@ -122,6 +131,7 @@ import {
   mdiEmail,
   mdiGithub,
   mdiLightningBolt,
+  mdiNewspaperVariantOutline,
 } from '@mdi/js'
 import { siBilibili } from 'simple-icons/icons'
 </script>
