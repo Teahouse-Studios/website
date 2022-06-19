@@ -74,7 +74,7 @@
               </v-btn>
               <v-btn
                 variant="text"
-                href="https://github.com/Teahouse-Studios/bot"
+                href="https://bot.teahouse.team/"
               >
                 小可
               </v-btn>
