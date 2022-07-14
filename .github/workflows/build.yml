@@ -1,0 +1,28 @@
+name: Release
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: Install
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Upload
+        uses: Teahouse-Studios/aliyun-oss-action@0.6
+        with:
+          KEY_ID: ${{ secrets.KEY_ID }}
+          KEY_SECRET: ${{ secrets.KEY_SECRET }}
+          BUCKET: web-teahouse-team
+          LOCAL_PATH: ./dist/
+          

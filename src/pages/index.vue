@@ -57,6 +57,62 @@
         </div>
       </v-container>
     </section>
+    <v-divider></v-divider>
+    <section>
+      <v-container class="d-flex align-center justify-center my-4">
+        <v-row v-if="posts.length !== 0" class="px-4">
+          <v-col
+            cols="12"
+            class="d-flex align-start justify-start text-h4 font-weight-bold mb-3"
+          >
+            新闻
+          </v-col>
+          <v-col v-for="p in posts" :key="p.id" cols="12" md="4">
+            <v-card variant="plain" class="pa-4">
+              <div
+                class="text-h4 font-weight-bold mb-3"
+                style="line-height: 3.75rem"
+                v-text="p.title.rendered"
+              ></div>
+              <div
+                class="text-subtitle-2 mb-3"
+                v-text="formatDate(new Date(p.date))"
+              ></div>
+              <div
+                class="text-subtitle-1 mb-3"
+                v-text="
+                  p.yoast_head_json.og_description.replace(/(<([^>]+)>)/gi, '')
+                "
+              ></div>
+              <v-btn
+                :href="p.link"
+                variant="text"
+                :prepend-icon="mdiArrowRight"
+                class="mb-3"
+              >
+                了解更多
+              </v-btn>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12"
+            ><v-btn
+              class="ml-auto mr-0"
+              href="https://story.teahouse.team/"
+              variant="text"
+              :prepend-icon="mdiNewspaperVariantOutline"
+              >更多新闻</v-btn
+            ></v-col
+          >
+        </v-row>
+        <v-row v-else class="px-4">
+          <v-col cols="12" md="4">
+            <v-progress-circular indeterminate></v-progress-circular>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+    <v-divider></v-divider>
     <section ref="about" class="fp-block">
       <v-container class="d-flex align-center justify-center block-height">
         <v-row class="px-4">
@@ -207,15 +263,32 @@ import {
   mdiApps,
   mdiCash,
   mdiChevronDown,
+  mdiNewspaperVariantOutline,
 } from '@mdi/js'
 
 import ExLink from '@/components/ExLink.vue'
+import { onMounted } from 'vue'
 
+let posts: any[] = $ref([])
 let video = $ref(0)
 const videos = [
   'https://player.bilibili.com/player.html?aid=716333939&bvid=BV1ZX4y1A7jY&cid=357776775&page=1',
   'https://player.bilibili.com/player.html?aid=889128743&bvid=BV1gK4y1u7Qs&cid=370637043&page=1',
 ]
+
+function formatDate(date: Date) {
+  return `${date.getFullYear()} 年 ${
+    date.getMonth() + 1
+  } 月 ${date.getDate()} 日`
+}
+
+onMounted(async () => {
+  posts = await (
+    await fetch(
+      'https://story.teahouse.team/wp-json/wp/v2/posts/?per_page=3&context=embed'
+    )
+  ).json()
+})
 </script>
 <style lang="scss">
 .fp-player {

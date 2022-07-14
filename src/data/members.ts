@@ -126,7 +126,7 @@ const members: Member[] = [
   {
     name: '最亮的信标',
     title: ['成员'],
-    avatar: 'Light_Beacon.png',
+    avatar: 'Light_Beacon.jpg',
     page: 'Light-Beacon',
     github: 'Light-Beacon',
     twitter: 'Nattiden',
@@ -135,10 +135,10 @@ const members: Member[] = [
     website: 'https://www.lightbeacon.top/',
   },
   {
-    name: 'MysticNabula70',
+    name: 'MysticNebula70',
     title: ['联合创始人', 'JavaScript 开发者', '中文 Minecraft Wiki 管理员'],
-    avatar: 'MysticNabula70.png',
-    page: 'MysticNabula70',
+    avatar: 'MysticNebula70.jpg',
+    page: 'MysticNebula70',
     github: 'AlPha5130',
     wiki: 'MysticNabula70',
     email: 'mysticnebula70',
